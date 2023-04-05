@@ -1,0 +1,52 @@
+{% include "header.html" %}
+<br><br><br>
+<div class="comic_info_container">
+    <h2>{{info_list['title']}}</h2>
+    <div class="comic_info">
+        <div class="column1">
+            <img src="{{info_list['img_link']}}">
+        </div>
+        <div class="column2">
+            <table style="color:red;background-color:#8989ef;color: #000000;border-radius: 20px;" class="table table-borderless">
+                <tr>
+                    <td class="td1">Other Name:</td>
+                    <td class="td2">{{info_list['other_name']}}</td>
+                </tr>
+                <tr>
+                    <td class="td1">Author(s):</td>
+                    <td class="td2">{{info_list['author']}}</td>
+                </tr>
+                <tr>
+                    <td class="td1">Status:</td>
+                    <td class="td2">{{info_list['status']}}</td>
+                </tr>
+                <tr>
+                    <td class="td1">Genres:</td>
+                    <td class="td2">{{info_list['genres']}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="summary-div">
+    <h2>Summary:</h2>
+    <p>
+       {{info_list["summary"]}}
+    </p>
+</div>
+
+<div class="issues-list">
+    <h2>Issues:</h2>
+    <div class="issues-container container text-center">
+        {% for issues in info_list["issues"] %}
+        <div style="margin-bottom:10px;" class="issues-row row align-items-start">
+          <div class="col">
+            <a href="/reading-page/{{issues["link"]}}"><h4>{{issues["name"]}}</h4></a>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<br><br>
+{% include "footer.html" %}

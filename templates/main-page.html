@@ -1,0 +1,49 @@
+  {% include 'header.html' %}
+  <br>
+  <br>
+  <br>
+    <div class="trending-comics">
+      <h3>Trending Comics</h3>
+    </div>
+      
+    <div class="trending-container">
+        <div class="new-container">
+
+            <div class="box-container">
+                {% for trending in main_page_list: %}
+                  <div class="box">
+                      <a href="/comic-page/{{trending["link"]}}">
+                        <img src="{{trending['source']}}" alt="">
+                        <h3>{{trending['text']}}</h3>
+                      </a>
+                  </div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="trending-comics">
+      <h3>Latest Updated Comics</h3>
+    </div>
+
+    <div class="trending-container">
+      <div class="new-container">
+
+          <div class="box-container">
+              {% for latest in main_page_latest: %}
+                <div class="box">
+                    <a href="/comic-page/{{latest["page_link"]}}">
+                      <img src="{{latest['source']}}" alt="">
+                      <h3>{{latest['text']}}</h3>
+                    </a>
+                </div>
+              {% endfor %}
+
+          </div>
+
+      </div>
+    </div>
+
+{% include 'footer.html' %}

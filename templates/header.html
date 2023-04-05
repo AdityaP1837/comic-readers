@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thunder Readers</title>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/static/images/logo.png" />Thunder Comics</a
+        >
+        <button
+          class="navbar-toggler bg-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav_link navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                style="color: black; background-color: aqua"
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comic-list">Comics List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nothing</a>
+            </li>
+          </ul>
+          <form
+            style="padding-left: 50px; color: aqua"
+            class="d-flex"
+            role="search"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Useless Currently"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
