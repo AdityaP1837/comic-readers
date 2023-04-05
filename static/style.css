@@ -1,0 +1,372 @@
+body {
+  background-color: #020202;
+}
+.navbar-brand {
+  color: aqua;
+  font-weight: 900;
+}
+.navbar-brand:hover {
+  color: aqua;
+}
+.navbar-brand img {
+  width: 30px;
+}
+.trending-comics {
+  background-color: rgb(240, 7, 77);
+}
+.trending-comics h3 {
+  text-align: center;
+  color: cornsilk;
+}
+.nav_link li a {
+  color: aqua;
+}
+.nav_link li a:hover {
+  color: rgb(14, 161, 161);
+}
+.dropdown-menu {
+  background-color: black;
+}
+.dropdown-item:hover {
+  background-color: black;
+}
+/*! Container */
+
+.trending-container .new-container {
+  background: transparent;
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+.trending-container .new-container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #3b3a3a;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+
+.trending-container .new-container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  row-gap: 20px;
+  column-gap: 70px;
+}
+
+.trending-container .new-container .box-container .box {
+  border-radius: 5px;
+  background: #333030;
+  border: 2px solid aqua;
+  margin-top: 45px;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.trending-container .new-container .box-container .box img {
+  height: 250px;
+}
+
+.trending-container .new-container .box-container .box a {
+  text-decoration: none;
+}
+
+.trending-container .new-container .box-container .box h3 {
+  color: #f89603;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.trending-container .new-container .box-container .box p {
+  color: #01fa22;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.trending-container .new-container .box-container .box p span {
+  color: #fff;
+}
+
+.trending-container .new-container .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+.footer {
+  border-top: 5px solid aqua;
+}
+.footer h2 {
+  background-color: black;
+  margin: 0px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  color: red;
+}
+
+/*! Comic list */
+
+.links-area {
+  background-color: #020202;
+  padding: 50px;
+  border-bottom: 5px solid aqua;
+}
+.links-box {
+  background-color: rgb(37, 36, 36);
+  margin: 0px 25%;
+  padding: 20px;
+  border-radius: 25px;
+}
+.row-line {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.second {
+  padding: 0px 45px;
+}
+.col-box {
+  background-color: #020202;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 65px;
+  height: 40px;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 5px 0px;
+}
+.col-box:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+.col-box a {
+  color: rgb(255, 2, 2);
+  text-align: center;
+  text-decoration: none;
+}
+
+/** Column for Comic list */
+.table-info {
+  margin: 60px 25%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  border: 10px solid aqua;
+  border-radius: 65px;
+  background-color: black;
+}
+.table-info a {
+  text-decoration: none;
+}
+.table-info h2 {
+  color: red;
+}
+
+/*! Comic Page */
+.comic_info_container {
+  background-color: black;
+  margin: 0px 30%;
+  padding: 10px 0px;
+  border: 5px solid aqua;
+  border-radius: 20px;
+}
+.comic_info_container h2 {
+  text-align: center;
+  color: red;
+  font-size: 2.5rem;
+}
+.comic_info {
+  display: flex;
+  margin: 0 6%;
+}
+.column1 {
+  padding: 10px 40px;
+}
+
+.column2 {
+  padding: 0px 25px;
+}
+.comic_info_container .comic_info .column2 table {
+  margin-top: 20px;
+}
+.summary-div {
+  background-color: #4e0567;
+  margin: 20px 2%;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.summary-div h2 {
+  color: #00fedd;
+}
+.summary-div p {
+  color: chartreuse;
+}
+.issues-list {
+  background-color: #000000;
+  margin: 0px 30%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.issues-list h2 {
+  color: #00fedd;
+  text-align: center;
+}
+.issues-container .issues-row .col {
+  background-color: crimson;
+  padding-top: 5px;
+  border-radius: 10px;
+  margin: 0px 15px;
+}
+.issues-container .issues-row .col a {
+  text-decoration: none;
+}
+.issues-container .issues-row .col h4 {
+  color: beige;
+}
+.issues-container .issues-row .col h4:hover {
+  font-size: 1.8rem;
+}
+
+/** Reading Page */
+.reading {
+  background-color: black;
+  padding-bottom: 35px;
+}
+
+.reading-info {
+  margin: 30px 30%;
+  background-color: #444343;
+  padding: 20px 30px;
+  width: 800px;
+  border-radius: 15px;
+}
+.reading-info-items {
+  display: flex;
+  margin-left: 92px;
+}
+.reading-info-items h4 {
+  color: gold;
+}
+.reading-info-items span {
+  color: #a3e400;
+  padding: 0px 10px;
+}
+.reading-resources {
+  text-align: center;
+}
+.reading-resources img {
+  width: 960px;
+  margin-bottom: 30px;
+}
+
+/** Responsive */
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width: 500px) {
+  .trending-container .new-container {
+    padding: 15px 4%;
+  }
+  .trending-container .new-container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .trending-container .new-container .box-container .box {
+    margin-top: 6px;
+  }
+  .trending-container .new-container .box-container .box img {
+    height: 200px;
+  }
+  /** Comic List */
+  .links-area {
+    padding: 25px;
+  }
+  .links-box {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .row-line {
+    padding: 0px;
+  }
+  .links-area .links-box .second {
+    padding: 0px 8px;
+  }
+  .col-box {
+    border: none;
+    background-color: rgb(37, 36, 36);
+  }
+  .table-info {
+    margin: 0px 0%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 0px;
+    background-color: black;
+  }
+  /** Comic Page */
+  .comic_info_container {
+    margin: 0px 5%;
+  }
+  .comic_info_container h2 {
+    font-size: 1.6rem;
+  }
+  .comic_info_container .comic_info .column1 {
+    padding: 10px 10px;
+  }
+  .comic_info_container .comic_info .column1 img {
+    width: 150px;
+    margin-top: 0px;
+  }
+  .comic_info_container .comic_info .column2 {
+    padding: 0px 0px;
+  }
+  .comic_info_container .comic_info .column2 table {
+    margin-top: 0px;
+  }
+  .footer h2 {
+    font-size: 17px;
+  }
+  .issues-list {
+    margin: 0px 9%;
+  }
+  .issues-container {
+    width: 350px;
+  }
+  .summary-div h2 {
+    font-size: 20px;
+  }
+  .summary-div p {
+    font-size: 14px;
+  }
+  .issues-container .issues-row .col h4:hover {
+    font-size: 20px;
+  }
+  /** Reading Page */
+  .reading-info {
+    margin: 3px 2%;
+    padding: 10px 10px;
+    width: 468px;
+  }
+  .reading-info-items {
+    margin-left: 37px;
+  }
+  .reading-info-items h4 {
+    font-size: 17px;
+  }
+  .reading-info-items a {
+    margin-left: 12px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 12px 13px;
+  }
+  .reading-resources img {
+    width: 454px;
+  }
+}
