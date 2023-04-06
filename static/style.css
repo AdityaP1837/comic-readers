@@ -370,3 +370,20 @@ body {
     width: 454px;
   }
 }
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .trending-container .new-container {
+    padding: 15px 2%;
+  }
+  .trending-container .new-container .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 0px;
+    column-gap: 20px;
+  }
+  .trending-container .new-container .box-container .box {
+    margin-top: 25px;
+  }
+  .trending-container .new-container .box-container .box img {
+    height: 200px;
+  }
+}
