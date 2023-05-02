@@ -326,3 +326,8 @@ body {
     width: 170px;
   }
 }
+@media (max-width: 360px){
+  .trending-container .new-container .box-container .box a img {
+    width: 158px;
+  }
+}
