@@ -303,82 +303,22 @@ body {
 }
 
 /** Responsive */
-@media (max-width: 350px) {
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width: 425px) {
+
+  /*! Main Page */
   .trending-container .new-container {
-    padding: 0 3%;
+    padding: 20px 1%;
   }
 
   .trending-container .new-container .box-container {
-    grid-template-columns: repeat(auto-fit, minmax(133px, 1fr));
-    row-gap: 0;
-    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 5px;
+    column-gap: 15px;
   }
 
   .trending-container .new-container .box-container .box {
-    padding: 0;
-    margin-top: 30px;
-  }
-
-  .trending-container .new-container .box-container .box img {
-    height: 177px;
-  }
-
-  .trending-container .new-container .box-container .box h3 {
-    padding: 7px 0;
-  }
-
-  /*! Comic Info Page */
-  .comic_info_container {
-    margin: 0px 3%;
-  }
-
-  .comic_info_container h2 {
-    font-size: 15px;
-  }
-
-  .comic_info_container .comic_info .column1 {
-    padding: 0;
-  }
-
-  .comic_info_container .comic_info .column1 img {
-    width: 100px;
-  }
-
-  .comic_info_container .comic_info .column2 {
-    padding: 0 13px;
-  }
-
-  .comic_info_container .comic_info .column2 table {
-    margin-top: 0;
-  }
-
-  .issues-list {
-    margin: 0 10%;
-    padding: 10px 10px;
-  }
-
-  .col a h4 {
-    font-size: 15px;
-  }
-
-  /*! Reading Page  */
-  .reading-info {
-    margin: 20px 4%;
-    padding: 10px 0;
-    width: 330px;
-  }
-
-  .reading-info-items {
-    margin-left: 10px;
-  }
-
-  .reading-resources img {
-    width: 330px;
-  }
-
-  /*! Footer */
-  .footer h2 {
-    font-size: 17px;
-    padding: 10px 0;
+    margin-top: 20px;
+    padding: 2px 2px;
   }
 }
