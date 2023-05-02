@@ -321,4 +321,8 @@ body {
     margin-top: 20px;
     padding: 2px 2px;
   }
+
+  .trending-container .new-container .box-container .box a img {
+    width: 217px;
+  }
 }
