@@ -391,4 +391,8 @@ body {
     width: 360px;
     margin-bottom: 15px;
   }
+
+  .issues-container .issues-row .col h4:hover {
+    font-size: 17px;
+  }
 }
