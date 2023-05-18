@@ -326,8 +326,69 @@ body {
     width: 170px;
   }
 }
-@media (max-width: 360px){
+
+@media (max-width: 375px) {
   .trending-container .new-container .box-container .box a img {
     width: 158px;
+  }
+
+  .comic_info_container {
+    margin: 0 1%;
+    border: 3px solid aqua;
+  }
+
+  .comic_info_container h2 {
+    font-size: 1.2rem;
+  }
+
+  .comic_info {
+    margin: 0;
+  }
+
+  .column1 {
+    padding: 10px 10px;
+  }
+
+  .column1 img {
+    width: 120px;
+  }
+
+  .column2 {
+    padding: 0px 5px 0 0;
+    margin-top: -10px;
+  }
+
+  .issues-list {
+    margin: 0;
+  }
+
+  .col a h4 {
+    font-size: 17px;
+  }
+
+  .footer h2 {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .reading-info {
+    margin: 20px 2%;
+    padding: 10px 10px;
+    width: 360px;
+  }
+
+  .reading-info-items {
+    display: block;
+    margin-left: 0;
+  }
+
+  .reading-info-items h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .reading-resources img {
+    width: 360px;
+    margin-bottom: 15px;
   }
 }
