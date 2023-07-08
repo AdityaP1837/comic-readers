@@ -325,7 +325,50 @@ body {
   .trending-container .new-container .box-container .box a img {
     width: 170px;
   }
+
+  .comic_info_container {
+    margin: 0 10%;
+  }
+
+  .comic_info_container h2 {
+    font-size: 1.5rem;
+  }
+
+  .comic_info_container .comic_info .column2 {
+    display: none;
+  }
+
+  .issues-list {
+    margin: 0;
+  }
+
+  .issues-container .issues-row .col h4 {
+    font-size: 15px;
+  }
+
+  .issues-container .issues-row .col h4:hover {
+    font-size: 15px;
+  }
+
+  .footer h2 {
+    font-size: 16px;
+  }
+
+  .reading-resources img {
+    width: 100%;
+  }
+
+  .reading-info {
+    margin: 10px 3%;
+    padding: 14px 12px;
+    width: 390px;
+  }
+
+  .reading-info .reading-info-items {
+    margin-left: 5px;
+  }
 }
+
 
 @media (max-width: 375px) {
   .trending-container .new-container .box-container .box a img {
@@ -343,14 +386,16 @@ body {
 
   .comic_info {
     margin: 0;
+    display: block;
   }
 
   .column1 {
     padding: 10px 10px;
+    text-align: center;
   }
 
   .column1 img {
-    width: 120px;
+    width: 160px;
   }
 
   .column2 {
@@ -394,5 +439,17 @@ body {
 
   .issues-container .issues-row .col h4:hover {
     font-size: 17px;
+  }
+
+  .comic_info_container {
+    margin: 0 10%;
+  }
+
+  .comic_info_container h2 {
+    font-size: 1.5rem;
+  }
+
+  .comic_info_container .comic_info .column2 {
+    display: none;
   }
 }

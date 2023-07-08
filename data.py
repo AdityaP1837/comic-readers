@@ -31,7 +31,7 @@ class Link_Gather:
             img_text = link['alt']
             img_link = soup.find('a', title=img_text)
             img_link_href = img_link["href"].replace(
-                "https://xoxocomics.com/comic/", "")
+                "https://xoxocomics.net/comic/", "")
             sample = {
                 'text': img_text,
                 'source': link['data-src'],
@@ -50,7 +50,7 @@ class Link_Gather:
             sample = {
                 'text': i.img["alt"],
                 'source': i.img["data-original"],
-                'page_link': (i.a["href"]).replace("https://xoxocomics.com/comic/", "")
+                'page_link': (i.a["href"]).replace("https://xoxocomics.net/comic/", "")
 
             }
             latest_list.append(sample)
@@ -59,7 +59,7 @@ class Link_Gather:
     def Comic_List(self, aplphabet: str):
         self.alphabet = aplphabet
         r = requests.get(
-            f"https://xoxocomics.com/comic-list/alphabet?c={self.alphabet}")
+            f"https://xoxocomics.net/comic-list/alphabet?c={self.alphabet}")
         response = r.content
 
         soup = BeautifulSoup(response, 'html.parser')
@@ -74,7 +74,7 @@ class Link_Gather:
             row_comic_status = i.find('div', class_='col-xs-3').text
             row_comic_status = row_comic_status.replace('\n', "")
             c_link = i.find("a", class_="jtip")['href']
-            l = c_link.replace("https://xoxocomics.com/comic/", "")
+            l = c_link.replace("https://xoxocomics.net/comic/", "")
             comic_link.append(l)
 
             sample_list = {
@@ -90,7 +90,7 @@ class Link_Gather:
         return final_list
 
     def comic_page(self, page_title):
-        r = requests.get(f"https://xoxocomics.com/comic/{page_title}")
+        r = requests.get(f"https://xoxocomics.net/comic/{page_title}")
         response = r.content
 
         soup = BeautifulSoup(response, 'html.parser')
@@ -113,7 +113,7 @@ class Link_Gather:
         for links in issues_links:
             link = links.a
             if link != None:
-                a = link["href"].replace("https://xoxocomics.com/comic/", "")
+                a = link["href"].replace("https://xoxocomics.net/comic/", "")
                 text = (link.text).replace("\n", "")
                 issue_list = {
                     "name": text,
@@ -135,7 +135,7 @@ class Link_Gather:
 
     def reading_page(self, issue_title, issue_num, issue_id):
         r = requests.get(
-            f"https://xoxocomics.com/comic/{issue_title}/{issue_num}/{issue_id}/all")
+            f"https://xoxocomics.net/comic/{issue_title}/{issue_num}/{issue_id}/all")
         response = r.content
 
         soup = BeautifulSoup(response, 'html.parser')
@@ -154,6 +154,6 @@ class Link_Gather:
         }
         return reading_page_info
 
-
-l = Link_Gather()
-print(l.main_page_latest)
+    def searched_results(self, query):
+        query = query.strip().replace(" ", "+")
+        
